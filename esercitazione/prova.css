@@ -1,0 +1,108 @@
+/* Reset e setup base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+}
+
+/* Timer e cerchio */
+.timer-container {
+    margin-bottom: 30px;
+}
+
+.timer-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#4caf50 0% 0%, #ccc 0% 100%);
+    transform: rotate(-90deg);
+}
+
+.timer-text {
+    position: absolute;
+    z-index: 10;
+    color: #333;
+}
+
+#timer-number {
+    font-size: 30px;
+}
+
+/* Domanda */
+.question-container {
+    margin: 30px 0;
+}
+
+/* Opzioni */
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: left;
+    width: 100%;
+}
+
+.options input[type="radio"] {
+    display: none; /* Nascondi il vero input radio */
+}
+
+.options label:hover {
+    background-color: #f0f0f0;
+}
+
+.options input[type="radio"]:checked + span {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+#questionCount {
+    font-size: 14px;
+}

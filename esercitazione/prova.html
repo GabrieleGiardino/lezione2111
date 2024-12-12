@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Benchmark page </title>
+    <link rel="stylesheet" href="prova.css"> <!-- Collega il CSS -->
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="/assets/epicode_logo.png" alt="epicode logo">
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="timer-container">
+            <div class="timer-circle">
+                <div class="progress-bar"></div>
+                <div class="timer-text">
+                    <span id="timer-number">60</span> <!-- Timer -->
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <h2 id="question-text">How can I create a <b>checkbox in HTML?</b></h2>
+        </div>
+
+        <fieldset>
+            <legend>answers</legend>
+            <div class="options" id="options-container">
+                <!-- Risposte saranno caricate dinamicamente con JavaScript -->
+            </div>
+        </fieldset>
+
+        <footer>
+            <div id="questionCount">
+                <p id="question-counter">QUESTION 1/10</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="prova.js"></script> <!-- Collega il JS -->
+</body>
+</html>
